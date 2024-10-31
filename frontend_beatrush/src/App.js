@@ -9,21 +9,21 @@ import Create from './components/Create.js';
 function App() {
     return (
         <Router>
-        <div>
-            <nav>
-                <Link to="/">Home</Link> | 
-                <Link to="/login">Login</Link> | 
-                <Link to="/create">create</Link>
-                <Link to="/profile">profile</Link>
-            </nav>
-            <Routes>
-            <Route path="/" element={<Home />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/create" element={<Create/>}/>
-              <Route path="/profile" element={<Profile/>}/>
-            </Routes>
-        </div>
-    </Router>
+            <div>
+                <nav>
+                    <Link to="/">Home</Link> | 
+                    <Link to="/login">Login</Link> | 
+                    <Link to="/create">create</Link>
+                    <Link to="/profile">profile</Link>
+                </nav>
+                <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/create" element={<Create/>}/>
+                <Route path="/profile" element={<Profile/>}/>
+                </Routes>
+            </div>
+        </Router>
     );
 }
 

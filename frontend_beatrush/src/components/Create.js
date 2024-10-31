@@ -3,4 +3,4 @@ function Create() {
     return <h2>Create Section</h2>
 }
 
-export default Create()
+export default Create;

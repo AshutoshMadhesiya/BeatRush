@@ -1,6 +1,10 @@
-import React from 'react'
+import React from "react";
 function Login() {
-    return <h2>Login Page</h2>
+  return (
+    <>
+      Login Page
+    </>
+  );
 }
 
-export default Login()
+export default Login;
