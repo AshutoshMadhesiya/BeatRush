@@ -3,8 +3,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import Home from './components/Home';
-import Profile from './components/profile';
-import Login from './components/Login';
+import Profile from './components/Profile';
+import Login from './Auth/Login';
 import Create from './components/Create';
 
 
