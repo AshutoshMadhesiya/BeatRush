@@ -1,6 +1,6 @@
 const mongoose = require ('mongoose')
 
-const DB_URL='mongodb+srv://rpx03775:phoenix123@users.v6fnf.mongodb.net/users'
+const DB_URL='mongodb+srv://user01:user012@users.v6fnf.mongodb.net/'
  const connectDB = async() => {
     try {
         await mongoose.connect(DB_URL, {
