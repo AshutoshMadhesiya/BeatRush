@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Login = ({ onAuthSuccess }) => {
   const [loginData, setLoginData] = useState({ email: "", password: "" });
+  const navigate = useNavigate(); // Initialize useNavigate for navigation
 
   const handleLoginChange = (e) => {
     setLoginData({ ...loginData, [e.target.name]: e.target.value });
@@ -79,7 +81,10 @@ const Login = ({ onAuthSuccess }) => {
         </form>
         <div className="text-center mt-6">
           <span className="text-gray-600">Don't have an account?</span>
-          <button className="text-pink-600 hover:text-pink-800 font-medium ml-2">
+          <button
+            onClick={() => navigate("/register")}
+            className="text-pink-600 hover:text-pink-800 font-medium ml-2"
+          >
             Register
           </button>
         </div>
