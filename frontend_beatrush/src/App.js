@@ -5,6 +5,7 @@ import Profile from "./components/Profile";
 import Login from "./Auth/Login";
 import Register from "./Auth/Register";
 import Create from "./components/Create";
+import PasswordReset from "./Auth/PasswordReset";
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -105,6 +106,7 @@ const App = () => {
           )}
           <Route path="/create" element={token ? <Create /> : <Navigate to="/login" />} />
           <Route path="/profile" element={token ? <Profile userName={userName} /> : <Navigate to="/login" />} />
+          <Route path="/password-reset" element={<PasswordReset />} />
         </Routes>
 
         {/* Create button at bottom right */}

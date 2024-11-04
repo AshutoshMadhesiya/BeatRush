@@ -65,12 +65,13 @@ const Login = ({ onAuthSuccess }) => {
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
           />
           <div className="text-right">
-            <a
-              href="#"
-              className="text-sm text-purple-600 hover:text-purple-800 hover:underline"
+            <button
+              type="button"
+              onClick={() => navigate("/password-reset")}
+              className="text-sm text-purple-600 hover:text-purple-800 hover:underline focus:outline-none"
             >
               Forgot password?
-            </a>
+            </button>
           </div>
           <button
             type="submit"
