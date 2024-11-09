@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global dark mode styles */
+body.dark {
+    background-color: #1a202c; /* Dark background */
+    color: #f7fafc; /* Light text color */
+  }
+  
+  body.dark .bg-gray-50 {
+    background-color: #2d3748; /* Dark background substitute */
+  }
+  
+  body.dark .text-gray-600 {
+    color: #a0aec0; /* Light text substitute */
+  }
+  
+  body.dark .text-gray-800 {
+    color: #e2e8f0;
+  }
+  
